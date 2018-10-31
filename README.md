@@ -1,5 +1,5 @@
 Clone it 
-cd HyperProductive/client
+cd client
 npm install
 ng serve &
 cd ../server 
