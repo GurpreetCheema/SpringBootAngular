@@ -3,8 +3,9 @@
   <span class="toolbar-spacer"></span>
   <button mat-raised-button color="accent" *ngIf="isAuthenticated"
           (click)="oktaAuth.logout()" [routerLink]="['/home']">Logout
+          <!-- if button is clicked then we logout and go to the homepage -->
   </button>
 </mat-toolbar>
 <!-- imp -->
-<router-outlet></router-outlet>
+<router-outlet></router-outlet>// why we need that?
 <!-- whatever route you are calling, icnlude that content -->
