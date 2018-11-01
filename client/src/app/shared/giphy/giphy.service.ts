@@ -7,6 +7,7 @@ export class GiphyService {
 //should i get my own API.his works though.
   giphyApi = '//api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&limit=1&q=';
 
+//what is happening here
   constructor(public http: HttpClient) {
   }
 

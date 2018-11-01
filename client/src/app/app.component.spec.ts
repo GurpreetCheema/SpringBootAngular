@@ -1,3 +1,5 @@
+
+//import testbed package from angular core package
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 describe('AppComponent', () => {

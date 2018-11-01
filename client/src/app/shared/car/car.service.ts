@@ -13,8 +13,8 @@ export class CarService {
   getAll(): Observable<any> {
     return this.http.get(this.API + '/cool-cars');
   }
-
-  get(id: string) {
+//handle call to spring boot
+  get(id: string) {// can try console log here
     return this.http.get(this.CAR_API + '/' + id);
   }
 

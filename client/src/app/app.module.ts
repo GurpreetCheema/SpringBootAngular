@@ -1,3 +1,5 @@
+
+// Import package from library and other components
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -51,9 +53,10 @@ const config = {
   redirectUri: 'http://localhost:4200/implicit/callback',
   clientId: '0oah20iuq4Be0OQJb0h7'
 };
-
+//all the modules are added here
 @NgModule({
   declarations: [
+    // all the components are added here
     AppComponent,
     CarListComponent,
     CarEditComponent,
@@ -72,9 +75,11 @@ const config = {
     RouterModule.forRoot(appRoutes),
     OktaAuthModule.initAuth(config)
   ],
+  // provider is soemthing that can create or deliever  a service. So giphy API is giving us data and car service is showing the list of cars
   providers: [CarService, GiphyService,
     {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}],
   bootstrap: [AppComponent]
+  // AppComponent is the first componet to call
 })
 export class AppModule { }
 

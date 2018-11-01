@@ -40,7 +40,7 @@ public class DemoApplication {
 			repository.findAll().forEach(System.out::println);
 		};
 	}
-
+//QD
 	@Bean
 	@SuppressWarnings("unchecked")
 	public FilterRegistrationBean simpleCorsFilter() {

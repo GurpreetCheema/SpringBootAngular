@@ -19,6 +19,7 @@ public class CoolCarController {
     
     @GetMapping("/cool-cars")
     @CrossOrigin(origins = "http://localhost:4200")
+//    Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional HTTP headers to tell a browser to let a web application running at one origin (domain) have permission to access selected resources from a server at a different origin. A web application makes a cross-origin HTTP request when it requests a resource that has a different origin (domain, protocol, and port) than its own origin.
     public Collection<Car> coolCars() {
         return repository.findAll().stream()
                 .filter(this::isCool)

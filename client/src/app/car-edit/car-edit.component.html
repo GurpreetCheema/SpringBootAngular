@@ -6,6 +6,7 @@
     <mat-card-content>
       <input type="hidden" name="href" [(ngModel)]="car.href">
       <mat-form-field>
+        <!-- The ngModel directive binds an input , select , textarea (or custom form control) to a property on the scope using NgModelController, which is created and exposed by this directive. ngModel is responsible for: Binding the view into the model, which other directives such as input , textarea or select require. -->
         <input matInput placeholder="Car Name" [(ngModel)]="car.name"
                required name="name" #name>
       </mat-form-field>
