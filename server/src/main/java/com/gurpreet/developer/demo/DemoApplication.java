@@ -40,7 +40,7 @@ public class DemoApplication {
 			repository.findAll().forEach(System.out::println);
 		};
 	}
-//QD
+//set up CORS- 8080 talking to 4200 is ok for us
 	@Bean
 	@SuppressWarnings("unchecked")
 	public FilterRegistrationBean simpleCorsFilter() {
